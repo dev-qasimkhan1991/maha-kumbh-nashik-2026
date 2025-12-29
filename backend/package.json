@@ -1,0 +1,21 @@
+{
+  "name": "kumbh-mela-backend",
+  "version": "1.0.0",
+  "description": "Maha Kumbh Mela 2026 Nashik Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seeds/seedData.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "keywords": ["kumbh", "mela", "nashik", "api"],
+  "author": "",
+  "license": "ISC"
+}

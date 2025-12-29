@@ -1,0 +1,19 @@
+# common
+node_modules/
+.env
+.env.local
+
+# frontend
+frontend/node_modules/
+frontend/build/
+
+# backend
+backend/node_modules/
+
+# admin dashboard
+admin-dashboard/node_modules/
+admin-dashboard/build/
+
+# OS & editor
+.DS_Store
+.vscode/

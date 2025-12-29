@@ -1,0 +1,150 @@
+.acc-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.acc-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.acc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.acc-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.acc-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.acc-card:hover .acc-image {
+  transform: scale(1.05);
+}
+
+.acc-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #4ecdc4 0%, #45b7d1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.acc-type-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #4ecdc4;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.acc-info {
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.acc-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.acc-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.review-count {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.acc-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.acc-detail svg {
+  color: #4ecdc4;
+  flex-shrink: 0;
+}
+
+.acc-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+.price-amount {
+  font-size: 1.3rem;
+}
+
+.price-period {
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.acc-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.amenity-tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .acc-card {
+    border-radius: 8px;
+  }
+
+  .acc-name {
+    font-size: 1rem;
+  }
+}
