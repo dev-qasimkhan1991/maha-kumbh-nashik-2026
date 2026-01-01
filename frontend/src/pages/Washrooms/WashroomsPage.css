@@ -1,0 +1,89 @@
+/* WashroomsPage.css */
+
+.washroom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.washroom-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #00b4db; /* Blue utility theme */
+    transition: transform 0.2s;
+}
+
+.washroom-card:hover {
+    transform: translateY(-5px);
+}
+
+.gender-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.gender-unisex { background: #e1bee7; color: #7b1fa2; }
+.gender-male { background: #bbdefb; color: #1976d2; }
+.gender-female { background: #f8bbd0; color: #c2185b; }
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.feature-tag {
+    background: #f1f1f1;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.utility-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.cleanliness-meter {
+    height: 6px;
+    width: 100%;
+    background: #eee;
+    border-radius: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.cleanliness-fill {
+    height: 100%;
+    background: #4caf50;
+}
+/* Add this to your WashroomsPage.css */
+
+.parking-card .tag {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Ensure the purple button doesn't turn orange on hover */
+.action-btn[style*="background: #9c27b0"]:hover {
+  background: #7b1fa2 !important;
+  box-shadow: 0 6px 15px rgba(156, 39, 176, 0.4) !important;
+}

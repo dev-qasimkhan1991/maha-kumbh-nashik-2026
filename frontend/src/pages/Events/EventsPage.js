@@ -17,14 +17,7 @@ const EventsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
-  // If viewing single event
-  if (id) {
-    const event = allEvents?.find(e => e._id === id);
-    if (!event) return <LoadingSpinner />;
-    return <EventDetailsPage event={event} />;
-  }
-
-  // Filter events
+  // Filter events - MOVED OUTSIDE CONDITION
   const filtered = useMemo(() => {
     if (!allEvents) return [];
     
@@ -36,6 +29,14 @@ const EventsPage = () => {
     });
   }, [allEvents, selectedCategory, searchTerm]);
 
+  // NOW check if viewing single event
+  if (id && allEvents) {
+    const event = allEvents.find(e => e._id === id);
+    if (event) {
+      return <EventDetailsPage event={event} />;
+    }
+  }
+
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="error-message">Error loading events</div>;
 
@@ -43,6 +44,7 @@ const EventsPage = () => {
 
   return (
     <div className="events-page">
+      {/* Rest of the component stays the same */}
       <div className="events-header">
         <h1>Maha Kumbh Events</h1>
         <p>Explore all the events happening during Maha Kumbh 2026</p>

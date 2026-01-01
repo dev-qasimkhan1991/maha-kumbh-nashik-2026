@@ -1,0 +1,49 @@
+.parking-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge[data-status="full"] {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.availability-info {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.space-count strong {
+  font-size: 1.4rem;
+  color: #ff6b35;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-top: 10px;
+}

@@ -1,0 +1,171 @@
+.datatable-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.datatable-container {
+  background: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.datatable thead {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.datatable th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.datatable th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.th-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-icon {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.datatable td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.datatable tbody tr {
+  transition: background-color 0.2s;
+}
+
+.datatable tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.actions-cell {
+  text-align: center;
+  padding: 1rem 0.75rem;
+}
+
+.actions-col {
+  width: 120px;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn-action {
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-view {
+  color: #3b82f6;
+}
+
+.btn-view:hover {
+  background-color: #dbeafe;
+}
+
+.btn-edit {
+  color: #f59e0b;
+}
+
+.btn-edit:hover {
+  background-color: #fef3c7;
+}
+
+.btn-delete {
+  color: #ef4444;
+}
+
+.btn-delete:hover {
+  background-color: #fee2e2;
+}
+
+.empty-cell {
+  text-align: center;
+  padding: 3rem 1.25rem;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.empty-state p {
+  margin: 0;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.empty-state small {
+  color: #9ca3af;
+}
+
+.datatable-loading {
+  background: white;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  color: #6b7280;
+}
+
+.datatable-footer {
+  padding: 1rem 1.25rem;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.record-count {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .datatable {
+    font-size: 0.85rem;
+  }
+
+  .datatable th,
+  .datatable td {
+    padding: 0.75rem;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+}

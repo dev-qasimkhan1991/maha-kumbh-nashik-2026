@@ -1,5 +1,3 @@
-import '../styles/Home.css';
-
 import React from 'react';
 
 import FeaturedAccommodations from './components/FeaturedAccommodations';

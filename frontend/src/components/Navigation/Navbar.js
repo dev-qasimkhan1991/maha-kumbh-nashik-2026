@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          🙏 Maha Kumbh 2026
+          🙏 Maha Kumbh Nashik 2026
         </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>
@@ -26,32 +26,28 @@ const Navbar = () => {
         </div>
 
         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMenu}>
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/map" className="nav-links" onClick={closeMenu}>
-              Map
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/events" className="nav-links" onClick={closeMenu}>
-              Events
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/accommodations" className="nav-links" onClick={closeMenu}>
-              Hotels
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/attractions" className="nav-links" onClick={closeMenu}>
-              Attractions
-            </Link>
-          </li>
-        </ul>
+  <li className="nav-item">
+    <Link to="/" className="nav-links" onClick={closeMenu}>Home</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/map" className="nav-links" onClick={closeMenu}>Map</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/events" className="nav-links" onClick={closeMenu}>Events</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/accommodations" className="nav-links" onClick={closeMenu}>Hotels</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/attractions" className="nav-links" onClick={closeMenu}>Attractions</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/parking" className="nav-links" onClick={closeMenu}>Parking</Link>
+  </li>
+  <li className="nav-item">
+    <Link to="/washrooms" className="nav-links" onClick={closeMenu}>Washrooms</Link>
+  </li>
+</ul>
       </div>
     </nav>
   );

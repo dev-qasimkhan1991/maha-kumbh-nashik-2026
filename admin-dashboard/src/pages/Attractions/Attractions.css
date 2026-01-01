@@ -1,0 +1,30 @@
+.attractions-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.badge-type-event {
+  background-color: #dbeafe;
+  color: #0c4a6e;
+}
+
+.badge-type-accommodation {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge-type-attraction {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.badge-type-facility {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-type-emergency {
+  background-color: #fee2e2;
+  color: #991b1b;
+}

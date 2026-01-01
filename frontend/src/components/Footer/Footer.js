@@ -22,6 +22,9 @@ const Footer = () => {
               <li><a href="/map">Map</a></li>
               <li><a href="/events">Events</a></li>
               <li><a href="/accommodations">Hotels</a></li>
+              <li><a href="/attractions">Attractions</a></li>
+              <li><a href="/parking">Parking</a></li>
+              <li><a href="/washrooms">Washrooms</a></li>
             </ul>
           </div>
 

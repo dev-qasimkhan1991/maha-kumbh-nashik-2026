@@ -12,6 +12,8 @@ const accommodationRoutes = require('./routes/accommodationRoutes');
 const attractionRoutes = require('./routes/attractionRoutes');
 const locationRoutes = require('./routes/locationRoutes');
 const zoneRoutes = require('./routes/zoneRoutes');
+const parkingRoutes = require('./routes/parkingRoutes');     // NEW
+const washroomRoutes = require('./routes/washroomRoutes');   // NEW
 
 // Initialize Express app
 const app = express();
@@ -34,6 +36,8 @@ app.use('/api/v1/accommodations', accommodationRoutes);
 app.use('/api/v1/attractions', attractionRoutes);
 app.use('/api/v1/locations', locationRoutes);
 app.use('/api/v1/zones', zoneRoutes);
+app.use('/api/v1/parking', parkingRoutes);              // NEW
+app.use('/api/v1/washrooms', washroomRoutes);          // NEW
 
 // Health check endpoint
 app.get('/api/v1/health', (req, res) => {
@@ -87,6 +91,10 @@ API Endpoints:
   POST /api/v1/locations
   GET  /api/v1/zones
   POST /api/v1/zones
+  GET  /api/v1/parking
+  POST /api/v1/parking
+  GET  /api/v1/washrooms
+  POST /api/v1/washrooms
 
 Health Check:
   GET  /api/v1/health

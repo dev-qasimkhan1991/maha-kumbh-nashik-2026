@@ -1,0 +1,124 @@
+.park-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.park-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.park-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.park-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.park-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.park-card:hover .park-image {
+  transform: scale(1.05);
+}
+
+.park-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #434343 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.park-type-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #434343;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.park-status-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.park-status-badge[data-status="available"] { background: #4CAF50; }
+.park-status-badge[data-status="full"] { background: #f44336; }
+
+.park-info {
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.park-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.park-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.park-detail svg {
+  color: #434343;
+  flex-shrink: 0;
+}
+
+.park-capacity-info {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.park-available-count {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+@media screen and (max-width: 768px) {
+  .park-card { border-radius: 8px; }
+  .park-name { font-size: 1rem; }
+}

@@ -1,0 +1,131 @@
+.wash-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wash-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wash-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.wash-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.wash-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wash-card:hover .wash-image {
+  transform: scale(1.05);
+}
+
+.wash-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.wash-gender-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #9c27b0;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.wash-info {
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wash-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.wash-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.wash-detail svg {
+  color: #9c27b0;
+  flex-shrink: 0;
+}
+
+.wash-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.wash-tag {
+  background: #f3e5f5;
+  color: #9c27b0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+/* Cleanliness Meter */
+.wash-rating-section {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.wash-meter-bg {
+  height: 6px;
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.wash-meter-fill {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .wash-card { border-radius: 8px; }
+  .wash-name { font-size: 1rem; }
+}
